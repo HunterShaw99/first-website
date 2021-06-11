@@ -1,0 +1,59 @@
+html {
+    font-family: 'Roboto', sans-serif; /*Page wide font style*/
+    font-size: 16px; /*Font size in pixels for entire page*/
+    background-color:   #474241;
+}
+/*Adjusts the size and position of the site header<h1>*/
+h1 {
+    margin: 0; /*You may have noticed there's a horrible gap at the top of the body.
+    That happens because browsers apply default styling to the <h1> element (among others).
+    That might seem like a bad idea, but the intent is to provide basic readability for 
+    unstyled pages. To eliminate the gap, we overwrite the browser's default styling with 
+    the setting margin: 0;.*/
+    padding: 20px 0; /*Next, we set the heading's top and bottom padding to 20 pixels.*/
+    color: #c04000;
+    text-shadow: 3px 3px 1px #726c6a; /*text-shadow applies a shadow to the text content of the element. Its four values are:
+
+    The first pixel value sets the horizontal offset of the shadow from the text: how far it moves across.
+    The second pixel value sets the vertical offset of the shadow from the text: how far it moves down.
+    The third pixel value sets the blur radius of the shadow. A larger value produces a more fuzzy-looking shadow.
+    The fourth value sets the base color of the shadow.*/
+    font-size: 55px;
+    text-align: center;
+}
+
+/*Adjusts formattting for paragraph<p> and list item<li> elements*/
+p, li {
+    line-height: 2;
+    letter-spacing: 1px;
+}
+
+/*Changes the position for all content inside of body*/
+body {
+    width: 600px; /*width: 600px; This forces the body to always be 600 pixels wide.*/
+    margin: 0 auto; /*margin: 0 auto; When you set two values on a property like margin 
+    or padding, the first value affects the element's top and bottom side (setting it to 0 in this case);
+    the second value affects the left and right side. (Here, auto is a special value that 
+    divides the available horizontal space evenly between left and right). You can also 
+    use one, three, or four values, as documented in Margin Syntax.*/
+    background-color: antiquewhite; /*background-color: #FF9500; This sets the element's
+    background color. This project uses a reddish orange for the body background color, 
+    as opposed to dark blue for the <html> element. (Feel free to experiment.)*/
+    padding: 0 20px 20px 20px; /*padding: 0 20px 20px 20px; This sets four values for padding.
+    The goal is to put some space around the content. In this example, there is no padding on 
+    the top of the body, and 20 pixels on the right, bottom and left. The values set top, right, 
+    bottom, left, in that order. As with margin, you can use one, two, three, or four values, as 
+    documented in Padding Syntax.*/
+    border: 5px solid black; /*border: 5px solid black; This sets values for the width, style 
+    and color of the border. In this case, it's a five-pixel–wide, solid black border, on all 
+    sides of the body.*/
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+}
+
+.menu {
+    display: inline;
+}
